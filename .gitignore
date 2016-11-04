@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 bin/*
 obj/*.o
 obj/tests/*.o
 lib/*.a
 !bin/.gitkeep
 !bin/tests/.gitkeep
+=======
+lib/
+bin/
+obj/
+!*.gitkeep
+>>>>>>> origin/master
