@@ -1,3 +1,6 @@
-lib/
-bin/
-obj/
+bin/*
+obj/*.o
+obj/tests/*.o
+lib/*.a
+!bin/.gitkeep
+!bin/tests/.gitkeep
