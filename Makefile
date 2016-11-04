@@ -51,6 +51,7 @@ define build-target-exe
 @echo building $(@F) executable
 @$(CXX) $(CXXFlags) -o $@ $^
 @echo $(@F) executable built
+$(sep)
 endef
 
 define make-target-lib
