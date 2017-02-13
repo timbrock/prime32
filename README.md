@@ -12,17 +12,17 @@ To compile on UNIX/Linux/OSX..., `cd` into the root directory and run `make`. Th
 #include "path/to/prime32/inc/prime32.h"
 
 int main(){
-   auto primes = prime32::sieve(1000);
-      for(int val : primes){
-         std::cout << val << "\n"; //prints out all prime numbers <= 1000
-   }
+  auto primes = prime32::sieve(1000);
+  for(int val : primes){
+    std::cout << val << "\n"; //prints out all prime numbers <= 1000
+  }
 }
 ```
 
 Then, when you compile your source code, mark *prime32.a* (in the *lib* directory) as a dependency and use the C++11 flag (or later). For example:
 
 ``` bash
-g++ -std=c++11 -o myapp myapp.cpp path/to/prime32/inc/prime32.a
+g++ -std=c++11 -o myapp myapp.cpp path/to/prime32/lib/prime32.a
 ```
 
 ## Functions
